@@ -494,13 +494,13 @@ h2,p{
     background-color: #FFEE2E;
    
 }
-input[type='radio']:hover {
+.radio_wrap  input[type='radio']:hover {
     box-shadow:0 0 5px 0px orange inset;
     width: 25px;
     height: 25px;
-    stroke-width:5
+    
   }
-  input[type='radio']:before  {
+ .radio_wrap input[type='radio']:before  {
     content:'';
     display:block;
     width:100%;
@@ -510,9 +510,9 @@ input[type='radio']:hover {
   }
 
   
-  input[type='radio']:checked:before {
+  .radio_wrap   input[type='radio']:checked:before {
     background: orange;
   }
-  input[type='radio']:checked ~ label{
+  .radio_wrap  input[type='radio']:checked ~ label{
     color:#FFEE2E !important;
   }
