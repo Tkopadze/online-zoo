@@ -862,6 +862,7 @@ font-size: 85px;
     .section1{
         width: 1000px;
         padding: 0px 30px;
+        box-sizing: border-box;
     }
     .bambooCap{
         width:455px;
