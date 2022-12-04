@@ -67,6 +67,9 @@ Height:22px;
     width: 60%;
 
 }
+.burger{
+    display: none;
+}
 .buttonWo{
 width:30%;
 height: 70%;
@@ -785,6 +788,9 @@ a:hover{
     .header{
         width:1000px;
     }
+    body{
+        width:1000px;
+    }
     .thirdColumn{
         justify-content: space-between;
         padding: 0px;
@@ -804,6 +810,7 @@ height: 180px;
     .navList{
         width:70%;
     }
+    
     .watch{
 width:1000px;
 height: 548px;
@@ -948,6 +955,11 @@ padding-left: 321px;
 }
 }
 @media only screen and (max-width:640px) {
+    body{
+        width:640px;
+    }
+    
+    
     .header{
         width: 640px;
         height: 34px;
