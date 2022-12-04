@@ -611,7 +611,7 @@ h2,p{
         position: absolute;
         top:328px;
         width: 100%;
-        height: 92.5%;
+        height: 85.3%;
         background: rgba(119, 119, 119, 0.777);
         display: none;
         z-index: 100;
@@ -770,6 +770,12 @@ h2,p{
     }
     main{
         width:max-content;
+    }
+    .burgerOpen{
+        width:320px;
+    }
+    .bc-grey{
+        height:80.7%;
     }
     .header{
         width:320px;
