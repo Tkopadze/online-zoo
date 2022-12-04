@@ -5,6 +5,7 @@ box-sizing: border-box;
 position: relative;
 overflow-x: scroll;
 box-sizing: border-box;
+margin-trim: trim;
 
 }
 .watch{
@@ -40,7 +41,7 @@ box-sizing: border-box;
     
 }
 .header{
-    position:  fixed;
+    position:  sticky;
   width: 1600px;
   z-index: 100;
     
@@ -254,6 +255,7 @@ Height:8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-sizing: border-box;
     align-content: space-around;
 }
 .animalDesc{
@@ -343,7 +345,7 @@ animation-timing-function: linear;
     align-items: center;
     justify-content: center;
     position: relative;
-
+    box-sizing: border-box;
     margin-top:180px;
    
 }
@@ -555,17 +557,33 @@ align-items: center;
     width: 90%;
 }
 .Tcard{
-    display: flex;
+   
     height: 391px;
     width: 268px;
    
     border-radius: 20px;
     
     flex-direction: column;
- 
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+
     background-color: #F1F3F2;
     border-radius: 5px;
+    padding: 2px;
 
+
+}
+.TcardBackground{
+    width:100%;
+    height: 100%;
+    display: flex;
+   
+    
+    flex-direction: column;
+    
+ 
+    background-color: #F1F3F2;
+    
 
 }
 .Tparagraph{
@@ -877,6 +895,7 @@ display: none;
 }
 .animalsWrapper{
     width: 100%;
+    box-sizing: border-box;
     padding: 0px 30px;
 }
 .animalsCards{
@@ -919,7 +938,7 @@ width: 100%;
     height:443px;
     justify-content: space-between;
     padding: 40px 30px  50px 30px;
-    box-sizing: content-box;
+
 }
 .Email{
     display: flex;
@@ -936,6 +955,7 @@ width: 100%;
  align-items: center;
 bottom: 30px;
 padding-left: 321px;
+width: fit-content;
 }
 .navList{
     padding: 0px;
@@ -1038,6 +1058,7 @@ align-self: flex-start;
     .section1{
         width:640px;
     padding-left: 0px;
+    box-sizing: border-box;
     }
     .bambooCap{
      display: none;
@@ -1050,6 +1071,7 @@ align-self: flex-start;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        box-sizing: border-box;
     }
     .burger{
         display: flex;
@@ -1127,12 +1149,14 @@ height: 50px;
         width: 100%;
        height: 108px;
        border-radius: 20px;
-      border: 2px solid;
-      border-image-source: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
-      linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-
-      padding: 5px 0px 0px 5px ;
+    padding: 2px;
+      
     }
+   .TcardBackground{
+    padding: 5px 0px 0px 5px ;
+    border-radius: 20px;
+    box-sizing: border-box;
+   }
     .Tparagraph{
         padding: 0px;
         font-size: 15px;
@@ -1172,6 +1196,7 @@ height: 50px;
     display: grid;
     grid-template: repeat(4,1fr)/repeat(2,1fr);
     padding: 13px 20px;
+    box-sizing: border-box;
   }
   .subscribe, .emailBtn{
    display: none;
@@ -1266,6 +1291,7 @@ height: 50px;
         margin: 15px 10px 0px 10px;
     }
     .section1{
+        box-sizing: border-box;
         width: 320px;
         justify-content: flex-start;
         padding-bottom: 0px;
@@ -1302,16 +1328,20 @@ height: 50px;
 }
 .animals{
     width:320px;
+    box-sizing: border-box;
     height:max-content;
     margin-top: 71px
 }
 .animalsWrapper{
 width:320px;
 flex-direction: column;
+box-sizing: border-box;
 flex-wrap: wrap;
 height:max-content;
+padding: 0px;
 }
 .animalsCards{
+    box-sizing: border-box;
 display: flex;
 flex-direction: column;
 width:320px;
@@ -1339,6 +1369,7 @@ height: 72px;
 .pink{
     width:320px;
 Height:1082px;
+box-sizing: border-box;
 }
 .content{
     width:300px;
