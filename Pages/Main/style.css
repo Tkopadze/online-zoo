@@ -10,13 +10,31 @@ margin-trim: trim;
 }
 .watch{
   height:780px;
-  background-image: url(../../assets/images/Giant\ Panda.png);
+  background-image: url(../../assets/images/GiantPanda.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   
 
 }
+/* #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  } */
+  /* #prev {
+    
+    transform: translate(50%, -50%);
+  }
+  
+  #next {
+  
+    transform: translate(-50%, -50%);
+  }   */
 .nav{
     height: 80px;
     display: flex;
@@ -284,18 +302,18 @@ Height:8px;
    
     background-repeat: no-repeat;
     background-image: url("../../assets/images/bamboobannanas.png");
-   
+    
 }
 .icon{
     background-repeat: no-repeat;
     background-image: url("../../assets/images/steak_icon.png");
     display: flex;
     justify-content: last baseline;
-    
+   
    
 }
 .icon img{
-    margin-top: 12px;
+    margin-top:10px;
 }
 .animalName{
     display: flex;
@@ -319,19 +337,19 @@ h6,h4{
 
 }
 
-.pandaCard{
+/* .pandaCard{
     display:flex;
   width:35%;
     flex-direction: column;
-    background-image: url(../../assets/images/Giant\ Panda.png);
+    background-image: url(../../assets/images/GiantPanda.png);
     background-repeat: no-repeat;
     background-size: 100% 90%;
     background-clip: border-box;
     justify-content: flex-end;
     
     
-}
-.pandaCard:hover{
+} */
+/* .pandaCard:hover{
 animation-name: CardAnimation;
 animation-duration: 2s;
 animation-fill-mode: both;
@@ -339,15 +357,15 @@ animation-delay: 0ms;
 animation-timing-function: linear;
 
 
-}
-
+} */
+/* 
 @keyframes CardAnimation{
-    0%{justify-content: flex-end;background:rgba(0, 0, 0, 0.6),url(../../assets/images/Giant\ Panda.png);background-size: 100% 90%;
+    0%{justify-content: flex-end;background:rgba(0, 0, 0, 0.6),url(../../assets/images/GiantPanda.png);background-size: 100% 90%;
         background-repeat: no-repeat;padding-bottom: 0px;}
     
     100%{padding-bottom: 150px;font-size: 20px;background-size: 105% 95%;color:white }
 
-}
+} */
 
 .card img{
     width: 100%;
@@ -554,6 +572,9 @@ align-items: center;
     justify-content: space-around;
     flex-direction: row;  
     align-items: center;
+    justify-content: flex-start;
+    width: 79%;
+
 }
 
 .headingTestimonial{
@@ -565,15 +586,16 @@ align-items: center;
 .tetimonialCards{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap:nowrap;
+    justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 79%;
+  overflow-x: hidden;
 }
 .Tcard{
-   
+    margin:0px 20px;
     height: 391px;
-    width: 268px;
+    width: 268px ;
    
     border-radius: 20px;
     
@@ -584,6 +606,8 @@ align-items: center;
     background-color: #F1F3F2;
     border-radius: 5px;
     padding: 2px;
+    flex-shrink: 0;
+    
 
 
 }
@@ -626,24 +650,25 @@ align-items: center;
     text-align: center;
 }
 .scrollmenu {
+    
+    background: #FE9013;
     background-color: white;
     overflow: auto;
     justify-self: last baseline;
     white-space: nowrap;
     width: 600px !important;
-    height:6px !important;
-    color: white;
-    border: 1px solid #FE9013;
-    border-radius: 5px
+    height:17px !important;
+    color: white; 
+    background: #FE9013; 
+    border-radius: 5px;
+    -webkit-appearance: none;
+    z-index: 150;
   }
-.Progres{
-    width: 115.19px;
-    height: 100%;
-    background-color: #FE9013;
-}
+ 
+  
   
 .scrollmenu:hover {
-    background-color: #777;
+    background-color: #FE9013;
   }
 
 .leaf{
@@ -1226,7 +1251,8 @@ height: 50px;
   justify-content: space-between;
    display: flex;
    flex-direction: column;
-   height: 55%
+   height: 55%;
+   padding: 0px 10px;
 
     }
     .testimonialsH3{
