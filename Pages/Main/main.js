@@ -31,6 +31,7 @@ function checkScreen(){
       generate();
       carousel();
       testimonialScroll();
+      popupTestimonial();
     };
 
 
@@ -182,4 +183,36 @@ function testimonialScroll(){
 
        
     })
+}
+
+//popup testimonials
+
+async function popupTestimonial(){
+ 
+    let cards = document.querySelectorAll(".Tcard");
+    let body = document.getElementsByTagName("body");
+    let fixDisplay=document.getElementsByTagName("html");
+    await cards;
+    let backGroundGrey = document.getElementsByClassName("bc-grey");
+    cards.forEach(x=>{
+        x.addEventListener("click",(event)=>{
+            backGroundGrey[0].style.display="block";
+            let clone =x.cloneNode(true);
+            backGroundGrey[0].append(clone);
+        
+        clone.style.cssText=`position:fixed;
+        top:21%;
+        right:20%;
+        z-index:150;
+        width:400px;
+        height:300px;`
+        fixDisplay[0].style.overflow="hidden";
+    })
+        })
+    
+
+    
+    // if(window.innerWidth<350){
+        
+    // }
 }

@@ -967,9 +967,12 @@ width: 100%;
 .testimonContent{
     width:1000px;
 }
-#testimonialId{
-    display: none;
+.Tcard{
+    width: 220px;
 }
+/* #testimonialId{
+    display: none;
+} */
 .buttonTestimonial{
     align-self: flex-start;
 }
