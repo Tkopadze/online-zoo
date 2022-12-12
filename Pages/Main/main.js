@@ -198,18 +198,21 @@ function testimonialScroll(){
 //popup testimonials
 
 async function popupTestimonial(){
- 
+    let closeTestButton=document.createElement("button");
+    closeTestButton.className="closeClone";
+    closeTestButton.innerHTML="close";
     let cards = document.querySelectorAll(".Tcard");
     let body = document.getElementsByTagName("body");
     let fixDisplay=document.getElementsByTagName("html");
+    let clone;
     await cards;
     let backGroundGrey = document.getElementsByClassName("bc-grey");
     cards.forEach(x=>{
         x.addEventListener("click",(event)=>{
             backGroundGrey[0].style.display="block";
-            let clone =x.cloneNode(true);
+             clone =x.cloneNode(true);
             backGroundGrey[0].append(clone);
-        
+        clone.append(closeTestButton);
         clone.style.cssText=`position:fixed;
         top:21%;
         right:20%;
@@ -219,7 +222,13 @@ async function popupTestimonial(){
         fixDisplay[0].style.overflow="hidden";
     })
         })
-    
+
+        closeTestButton.addEventListener("click",(event)=>{
+            backGroundGrey[0].removeChild(clone);
+        })
+        backGroundGrey[0].addEventListener("click",(event)=>{
+            backGroundGrey[0].removeChild(clone);
+        })
 
     
     // if(window.innerWidth<350){
