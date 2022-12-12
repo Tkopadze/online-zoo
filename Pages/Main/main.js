@@ -41,6 +41,7 @@ function checkScreen(){
         })
 
  function closeBurger(){
+    let closeBtnBurger = document.getElementsByClassName("close");
     backGroundGrey[0].addEventListener("click",(event)=>{
             burger[0].style.display="none";
             backGroundGrey[0].style.display="none";
@@ -51,6 +52,12 @@ function checkScreen(){
         backGroundGrey[0].style.display="none";
 
     })
+    closeBtnBurger[0].addEventListener("click",(event)=>{
+        burger[0].style.display="none";
+        backGroundGrey[0].style.display="none";
+
+    })
+ 
 
 }
 
@@ -122,6 +129,9 @@ function generate(){
     }).then(x=>x.animals.forEach(y=>{
         AnimalsArr.push(y)
     }));
+
+
+
 console.log(AnimalsArr)
     let cards = document.querySelectorAll(".Card");
     let numbers =  generate();
